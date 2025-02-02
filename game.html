@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainStorm Quest</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>BrainStorm Quest</h1>
+
+  <div class="quest-container">
+    <div class="questions">
+        <div class="question">
+        <p>1. What is the capital of France?</p>
+        <button onclick="checkAnswer(this, 'wrong')">London</button>
+        <button onclick="checkAnswer(this, 'wrong')">Rome</button>
+        <button onclick="checkAnswer(this, 'correct')">Paris</button>
+        <button onclick="checkAnswer(this, 'wrong')">Berlin</button>
+        </div>
+        <hr>
+        
+        <div class="question">
+        <p>2. Which planet is known as the Red Planet?</p>
+        <button onclick="checkAnswer(this, 'wrong')">Earth</button>
+        <button onclick="checkAnswer(this, 'wrong')">Venus</button>
+        <button onclick="checkAnswer(this, 'correct')">Mars</button>
+        <button onclick="checkAnswer(this, 'wrong')">Jupiter</button>
+         </div>
+        <hr>
+
+         <div class="question">
+        <p>3. What is the largest ocean on Earth?</p>
+        <button onclick="checkAnswer(this, 'wrong')">Atlantic Ocean</button>
+        <button onclick="checkAnswer(this, 'wrong')">Indian Ocean</button>
+        <button onclick="checkAnswer(this, 'correct')">Pacific Ocean</button>
+        <button onclick="checkAnswer(this, 'wrong')">Arctic Ocean</button>
+        </div>
+        <hr>
+
+        <div class="question">
+        <p>4. Who wrote 'Romeo and Juliet'?</p>
+        <button onclick="checkAnswer(this, 'wrong')">Charles Dickens</button>
+        <button onclick="checkAnswer(this, 'correct')">William Shakespeare</button>
+        <button onclick="checkAnswer(this, 'wrong')">Jane Austen</button>
+        <button onclick="checkAnswer(this, 'wrong')">Mark Twain</button>
+        </div>
+        <hr>
+
+        <div class="question">
+        <p>5. What is the boiling point of water?</p>
+        <button onclick="checkAnswer(this, 'wrong')">50°C</button>
+        <button onclick="checkAnswer(this, 'wrong')">75°C</button>
+        <button onclick="checkAnswer(this, 'correct')">100°C</button>
+        <button onclick="checkAnswer(this, 'wrong')">125°C</button>
+        </div>
+    </div>
+
+     <button class="result-btn" onclick="showResult()">Show Result</button>
+        <p id="result"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
